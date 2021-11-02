@@ -1,4 +1,4 @@
-package com.example.notesappfragments
+package com.example.notesappfragments.dataBase
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

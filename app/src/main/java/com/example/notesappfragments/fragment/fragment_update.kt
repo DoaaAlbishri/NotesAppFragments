@@ -1,4 +1,4 @@
-package com.example.notesappfragments
+package com.example.notesappfragments.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -11,6 +11,8 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.notesappfragments.viewModel.MyViewModel
+import com.example.notesappfragments.R
 
 
 class fragment_update : Fragment() {
@@ -24,7 +26,7 @@ class fragment_update : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_update, container, false)
-        // decleare shared Preferences
+        // declare shared Preferences
         val sharedPreferences = requireActivity().getSharedPreferences(
                 getString(R.string.preference_file_key), Context.MODE_PRIVATE)
         updateBtn = view.findViewById(R.id.updateBtn)

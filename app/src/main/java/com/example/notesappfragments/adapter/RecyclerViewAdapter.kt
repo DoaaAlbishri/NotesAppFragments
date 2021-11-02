@@ -1,4 +1,4 @@
-package com.example.notesappfragments
+package com.example.notesappfragments.adapter
 
 import android.content.Context
 import android.graphics.Color
@@ -7,6 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.notesappfragments.fragment.Fragment_main
+import com.example.notesappfragments.dataBase.Note
+import com.example.notesappfragments.R
 import kotlinx.android.synthetic.main.item_row.view.*
 
 class RecyclerViewAdapter(private val mainActivity: Fragment_main, private val words: List<Note>) : RecyclerView.Adapter<RecyclerViewAdapter.ItemViewHolder>(){

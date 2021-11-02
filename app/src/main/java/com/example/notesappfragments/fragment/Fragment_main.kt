@@ -1,4 +1,4 @@
-package com.example.notesappfragments
+package com.example.notesappfragments.fragment
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -13,6 +13,11 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.notesappfragments.viewModel.MyViewModel
+import com.example.notesappfragments.R
+import com.example.notesappfragments.adapter.RecyclerViewAdapter
+import com.example.notesappfragments.dataBase.Note
+import com.example.notesappfragments.dataBase.NoteDatabase
 
 class Fragment_main : Fragment() {
     lateinit var editText: EditText
@@ -30,7 +35,7 @@ class Fragment_main : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_main, container, false)
 
-        // Decleare sharedPreferences
+        // declare sharedPreferences
         sharedPreferences = requireActivity().getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE)
 
         editText = view.findViewById<EditText>(R.id.editText)

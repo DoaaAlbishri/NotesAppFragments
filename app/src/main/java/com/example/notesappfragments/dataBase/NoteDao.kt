@@ -1,8 +1,9 @@
-package com.example.notesappfragments
+package com.example.notesappfragments.dataBase
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import androidx.room.Update
+import com.example.notesappfragments.dataBase.Note
 
 @Dao
 interface NoteDao {

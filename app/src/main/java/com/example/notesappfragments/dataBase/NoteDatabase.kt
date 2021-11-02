@@ -1,10 +1,9 @@
-package com.example.notesappfragments
+package com.example.notesappfragments.dataBase
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-
 
 
 @Database(entities = [Note::class],version = 1,exportSchema = false)
